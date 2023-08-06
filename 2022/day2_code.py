@@ -2,7 +2,7 @@
 
 scor = 0
 
-with open('day2_input.txt' ,'r') as file:
+with open('advent-of-code/2022/day2_input.txt' ,'r') as file:
     data = [i.split() for i in file.read().strip().split('\n')]
 
 d = {

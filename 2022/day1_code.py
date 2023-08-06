@@ -1,6 +1,6 @@
 #2022 day1 
 
-with open('day1_input.txt' ,'r') as file:
+with open('advent-of-code/2022/day1_input.txt' ,'r') as file:
     data = [i for i in file.read().strip().split('\n')]
     # print(data)
 m = []

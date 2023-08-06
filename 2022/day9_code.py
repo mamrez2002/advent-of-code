@@ -1,7 +1,7 @@
 #2022 day9
 import time,os
 
-with open('day9_input.txt' ,'r') as file:
+with open('advent-of-code/2022/day9_input.txt' ,'r') as file:
     data = [i for i in file.read().strip().split('\n')]
 
 mp = [list(1000*'.') for i in range(0,1000)]
