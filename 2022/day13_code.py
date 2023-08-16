@@ -55,18 +55,18 @@ lis = []
 for i in data:
     lis.append(eval(i.split('\n')[0]))
     lis.append(eval(i.split('\n')[1]))
-data = ['*' for i in range(len(lis))]
 
 # data = [data[14]]
+data = []
 
 
-for item in lis:
+for item in [[[2]] , [[6]]]:
     sum = 0
     for i in lis:
         if item != i:
-            if check_item(item , i):
+            if not check_item(item , i):
                 sum += 1
-    data[(len(lis)-1) - sum] = item
+    data.append(sum)
 
 
-print('--part b--> :' , (data.index([[2]])+1) * (data.index([[6]])+1))
+print('--part b--> :' , (data[0] +1) * (data[1] +1))
